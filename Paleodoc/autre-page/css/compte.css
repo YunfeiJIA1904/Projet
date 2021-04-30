@@ -1,0 +1,222 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header
+{
+    display: flex;
+}
+
+body
+{
+    background-color: #f7f7f8;
+}
+
+.left-content
+{
+    width: 50%;
+    display: flex;
+    padding-left: 1.5rem;
+    align-items: center;
+}
+
+.left-content a div
+{
+    float: left;
+    width: 64px;
+    height: 64px;
+    background-image: url('img/triceratops.png');
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.left-content a div:hover
+{
+    background-image: url('img/triceratops(1).png');
+}
+
+.left-content p
+{
+    text-align: center;
+}
+
+.right-content
+{
+    width: 50%;
+    padding-right: 1.5rem;
+}
+
+.right-content ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 64px;
+}
+
+.right-content ul li a
+{
+    margin: 0 1rem;
+}
+
+.right-content ul li a
+{
+    text-decoration: none;
+}
+
+.right-content ul li a:hover
+{
+    color: orange;
+}
+
+#on_page {
+    position: relative;
+}
+
+#on_page::before
+{
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    content: "";
+    position: absolute;
+    width: calc(100% - 2rem);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1rem;
+}
+
+
+/* Page centrale */
+#main-content{
+  height: 800px;
+  background-image: url('img/fond.png');
+}
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+  padding-top: 250px;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 15%;
+}
+
+.form input {
+  font-family: "Montserrat", sans-serif;
+  outline: 0;
+  background: white;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-bottom: 1px solid black;
+}
+
+.form button {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  background: #A7CD76;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 2rem;
+  margin-bottom: 15px;
+}
+
+#main-content .login-form p{
+  padding-bottom: 15px;
+}
+
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+
+main img{
+  padding-bottom: 20px;
+}
+
+
+/* Footer */
+footer {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.maps {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+}
+
+.maps iframe {
+  float: right;
+}
+
+.infos {
+  width: 40%;
+  display: grid;
+  align-content: center;
+}
+
+.container {
+  display: flex;
+}
+
+.foot {
+  display: flex;
+}
+
+.left-foot, .right-foot {
+  width: 50%;
+}
+
+.right-foot p{
+  float: right;
+}
+
+.infos img {
+  margin : 0 1rem 0 1rem;
+  justify-content: center;
+  vertical-align: sub;
+}
+
+.infos-container {
+  display: flex;
+}
+
+.infos-container div {
+  width: 33%;
+  text-align: center;
+}
+
+.infos-footer {
+  margin-bottom: 7.5%;
+  text-align: center;
+}
+
+.infos-container span {
+  display: flex;
+  align-items: center;
+  border-right: 2px solid black;
+}

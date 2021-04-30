@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang=fr dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Billetterie</title>
+    <link rel="stylesheet" href="css/billetterie.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="shortcut icon" href="css/img/diplodocus.png">
+  </head>
+  <body>
+    <header>
+      <div class="left-content">
+        <a href="accueil.html">
+          <div></div>
+        </a>
+        <p> | Paleodoc</p>
+      </div>
+      <div class="right-content">
+        <ul>
+          <li class="menu"><a href="accueil.html">Accueil</a></li>
+          <li class="menu"><a href="decouvrir.html">Découvrir</a></li>
+          <li class="menu" id="on_page"><a href="billetterie.html">Billetterie</a></li>
+          <li class="menu"><a href="compte.html">Compte</a></li>
+        </ul>
+      </div>
+    </header>
+    <h1>Réservez ici vos ticket !</h1>
+    <div class="icon-bar">
+      <a href="https://fr-fr.facebook.com/museumnationaldhistoirenaturelle" class="facebook"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/Le_Museum" class="twitter"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/le_museum/" class="instagram"><i class="fa fa-instagram"></i></a>
+    </div>
+
+    <!-- La page de la billetterie -->
+    <main class="grid" role="main">
+      <div class="card grid-item">
+        <div class="card-graphic">
+          <img src="https://image.flaticon.com/icons/png/512/2436/2436683.png" alt="solo" width=80>
+        </div>
+        <h1 class="card-title">Solo</h1>
+        <p class="card-message">Pour visitez le musée en solo, c'est ici ! </p>
+        <button class="card-button" onclick="window.location.href='#open-modal1'">
+          <abbr>Réserver !</abbr>
+        </button>
+      </div>
+      <div class="card grid-item">
+        <div class="card-graphic">
+          <img src="https://image.flaticon.com/icons/svg/437/437491.svg" width=80>
+        </div>
+        <h1 class="card-title">Famille</h1>
+        <p class="card-message">Pour visitez le musée en famille, c'est ici !</p>
+        <button class="card-button" onclick="window.location.href='#open-modal'">
+          <abbr>Réserver</abbr>
+        </button>
+      </div>
+      <div class="card grid-item">
+        <div class="card-graphic">
+          <img src="https://image.flaticon.com/icons/svg/476/476761.svg" alt="" width=80>
+        </div>
+        <h1 class="card-title">Groupe</h1>
+        <p class="card-message">Si vous êtes 5 ou plus, et moins de 20, c'est ici !</p>
+        <button class="card-button" onclick="window.location.href='#open-modal2'">
+          <abbr>Réserver !</abbr>
+        </button>
+      </div>
+      </main>
+      <!-- La page de billetterie -->
+      <!-- Les modales -->
+
+      <!-- Modale Solo-->
+
+      <div id="open-modal1" class="modal-window">
+  <div>
+    <div class ="modal-container">
+      <div class="modal-titre">
+      </div>
+      <div class="modal-cross">
+        <a href="billetterie.html" title="Close"> <img src="css/img/croix.png" alt="image d'une croix"></a>
+      </div>
+    </div>
+    <div>
+    <div id = "integration">
+        <div class="container2">
+      <form id="contact" action="" method="post">
+        <h3>Réservation</h3>
+        <fieldset>
+          <input placeholder="Nom" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Prenom" type="text" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Adresse Mail" type="email" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+          <input type="text" placeholder="Date de naissance" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+        </fieldset>
+        <fieldset>
+        </fieldset>
+        <fieldset>
+        <input type="text" placeholder="Date de visite" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+        </fieldset>
+        <fieldset>
+        <td>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" href = 'billetterie.html'>Recevoir</button>
+        </fieldset>
+        </form>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      <!-- Modale solo fin-->
+
+      <!-- Modale Groupe-->
+      <div id="open-modal2" class="modal-window">
+  <div>
+    <div class ="modal-container">
+      <div class="modal-titre">
+      </div>
+      <div class="modal-cross">
+        <a href="billetterie.html" title="Close"> <img src="css/img/croix.png" alt="image d'une croix"></a>
+      </div>
+    </div>
+    <div>
+      <div id = "integration">
+      <div class="container2">
+        <form id="contact" action="" method="post">
+          <h3>Réservation</h3>
+          <fieldset>
+            <input placeholder="Nom" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Prenom" type="text" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Adresse Mail" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+          <input type="text" placeholder="Date de naissance" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+          </fieldset>
+          <fieldset>
+            <input type='number' placeholder='Nombre de personnes' min='5' max='20'/>
+          </fieldset>
+          <fieldset>
+          <input type="text" placeholder="Date de visite" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+          </fieldset>
+
+
+       <fieldset>
+
+       <td>
+       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Recevoir</button>
+          </fieldset>
+        </form>
+      </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      <!-- Modale Groupe fin-->
+
+      <!-- Modale Famille-->
+      <div id="open-modal" class="modal-window">
+  <div>
+    <div class ="modal-container">
+      <div class="modal-titre">
+      </div>
+      <div class="modal-cross">
+        <a href="billetterie.html" title="Close"> <img src="css/img/croix.png" alt="image d'une croix"></a>
+      </div>
+    </div>
+    <div>
+      <div id = "integration">
+      <div class="container2">
+    <form id="contact" action="" method="post">
+      <h3>Réservation</h3>
+      <fieldset>
+        <input placeholder="Nom" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Prenom" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Adresse Mail" type="tel" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input type="text" placeholder="Date de naissance" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+      </fieldset>
+      <fieldset>
+        <input type='number' placeholder="Nombre d'enfants" min='1' max='20'/>
+        </fieldset>
+        <fieldset>
+        <input type='number' placeholder="Nombre d'adultes" min='1' max='5'/>
+      </fieldset>
+      <fieldset>
+      <input type="text" placeholder="Date de visite" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+      </fieldset>
+   <fieldset>
+   <td>
+   <button name="Recevoir Billet" type="submit" id="contact-submit" data-submit="...Sending">Recevoir</button>
+      </fieldset>
+    </form>
+  </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      <!-- Modale Famille fin-->
+
+      <!-- Les modales Fin -->
+
+      <!--Footer-->
+      <footer>
+        <hr>
+        <div class="container">
+          <div class="infos">
+            <div class="infos-footer">
+              <h2>INFOS</h2>
+            </div>
+            <div class="infos-container">
+              <div class="">
+                <img src="css/img/map.png" alt=" "width="32" height="32">
+                <br> <br>
+                <p>2 rue Buffon</p>
+                <p>75005 Paris</p>
+                <p>France</p>
+              </div>
+              <span></span>
+              <div class="">
+                <img src="css/img/phone.png" alt="" width="32" height="32">
+                <br> <br>
+                <p>08 825 123 456</p>
+                <a href="mailto:help@paleodoc.fr  ">help@paleodoc.fr</a>
+              </div>
+              <span></span>
+              <div class="">
+                <img src="css/img/calendar.png" alt="" width="32" height="32">
+                <br> <br>
+                <p>Lun - Ven : 10h - 20h</p>
+                <p>Samedi : 9h - 22h</p>
+                <p>Dimanche : Fermé</p>
+              </div>
+            </div>
+          </div>
+          <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.789361846429!2d2.36069741557091!3d48.84315637928603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671f6fe54b189%3A0x7b222fd6de7223a2!2s2%20Rue%20Buffon%2C%2075005%20Paris!5e0!3m2!1sfr!2sfr!4v1579533302239!5m2!1sfr!2sfr" width="750" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+        </div>
+        <hr>
+        <div class="foot">
+          <div class="left-foot">
+            <p>Copyright ©2020 Paléodoc, Inc.</p>
+          </div>
+          <div class="right-foot">
+              <p> <a href="https://www.mnhn.fr/fr/propos-museum">À propos</a> | <a href="https://www.mnhn.fr/fr/mentions-legales-site-internet">Conditions générales</a> | <a href="https://www.mnhn.fr/fr/credits">Crédits</a></p>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
